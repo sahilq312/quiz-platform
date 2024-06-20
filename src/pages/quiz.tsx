@@ -11,8 +11,8 @@ const QuizApp: React.FC = () => {
   const [userAnswers, setUserAnswers] = useState<boolean[]>([]);
 
   useEffect(() => {
-    const CreatedQuiz = localStorage.getItem("Quizzes");
-    console.log(CreatedQuiz);
+    const CreatedQuiz = localStorage.getItem("quiz");
+    //console.log(CreatedQuiz);
     if (CreatedQuiz) {
       setQuizData(JSON.parse(CreatedQuiz));
     }
